@@ -10,7 +10,7 @@ docker build -t myjenkins-blueocean:2.414.2 .
 
 #IF you are having problems building the image yourself, you can pull from my registry (It is version 2.332.3-1 though, the original from the video)
 
-docker pull devopsjourney1/jenkins-blueocean:2.332.3-1 && docker tag devopsjourney1/jenkins-blueocean:2.332.3-1 myjenkins-blueocean:2.332.3-1
+docker pull amitkoundal02/jenkins-blueocean:2.332.3-1 && docker tag amitkoundal02/jenkins-blueocean:2.332.3-1 myjenkins-blueocean:2.332.3-1
 ```
 
 ## Create the network 'jenkins'
@@ -65,5 +65,5 @@ docker inspect <container_id> | grep IPAddress
 
 ## Using my Jenkins Python Agent
 ```
-docker pull devopsjourney1/myjenkinsagents:python
+docker pull amitkoundal02/myjenkinsagents:python
 ```
